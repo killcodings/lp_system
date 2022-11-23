@@ -1,26 +1,16 @@
-/* By Athlon Front-End Team */
+// Base
+@use "base/defaults";
+@use "base/fonts";
+@use "base/section-tag";
+@use "base/container";
+@use "base/vars";
 
-/* Core variables */
-@import 'base/vars';
 
-/* CSS Reset */
-@import 'base/reset';
 
-/* CSS print */
-@import 'base/print';
+// Components
+//@use "components/image-func";
+@use "components/header/header";
+@use "components/image/image-func";
 
-/* Fonts */
-@import 'base/fonts';
-
-/* Mixins, helpers and functions */
-@import 'base/mixins';
-
-/* Vendor */
-
-/* Components */
-
-/* Browser specific styles */
-@import 'dirty/hacks';
-
-/* Demo Page styles */
-@import 'demo';
+// ACF Blocks
+@use "acf-blocks/media-text/media-text";

@@ -1,0 +1,16 @@
+.image-func {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@mixin sizeImage($width, $height) {
+  max-width: $width;
+  height: $height;
+}

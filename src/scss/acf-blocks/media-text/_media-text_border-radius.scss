@@ -1,0 +1,24 @@
+.media-text {
+
+  &_border-radius {
+    border-radius: 25px;
+  }
+
+  &__content {
+    margin-left: 64px;
+
+    @media (max-width: 1000px) {
+      margin-left: 0;
+    }
+  }
+
+  &__media {
+    .image-func {
+      margin: 64px 32px 0 0;
+      
+      @media (max-width: 1000px) {
+        margin: 32px 0 0 0;
+      }
+    }
+  }
+}

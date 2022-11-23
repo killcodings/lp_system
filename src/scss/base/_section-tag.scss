@@ -1,0 +1,9 @@
+.section-tag {
+  position: relative;
+  padding: var(--section-offsets) 0;
+  background-color: var(--section-background);
+
+  @media(max-width: 600px) {
+    padding: var(--section-offsets) 0;
+  }
+}

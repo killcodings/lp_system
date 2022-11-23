@@ -1,0 +1,9 @@
+@use "media-text_border-radius";
+
+.media-text {
+  display: grid;
+  gap: 0 64px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+}

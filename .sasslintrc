@@ -3,7 +3,7 @@ files:
   include: 'src/scss/*'
   ignore:
     - 'src/scss/vendor/**/*.scss'
-    - 'src/scss/base/_reset.scss'
+    - 'src/scss/base/_defaults.scss'
     - 'src/scss/base/_print.scss'
     - 'src/scss/base/_fonts.scss'
     - 'src/scss/base/mixins.scss'

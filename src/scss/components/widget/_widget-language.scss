@@ -1,0 +1,49 @@
+.widget {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+
+  .wpml-ls {
+    position: relative;
+    &-slot-language-flags {
+
+    }
+    &-sub-menu {
+      display: none;
+      position: absolute;
+      right: -55px;
+      &-active {
+        display: block;
+      }
+    }
+  }
+
+  .wpml-ls-link {
+    display: flex;
+    width: 23px;
+    height: 23px;
+    margin-right: 8px;
+  }
+
+  &-select {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--header-nav-menu-color);
+    margin: 0 0 0 9px;
+  }
+
+  &-icon {
+    transition: .3s;
+    &:before {
+      margin: 0;
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &-open {
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

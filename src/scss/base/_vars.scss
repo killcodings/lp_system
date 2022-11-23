@@ -1,3 +1,23 @@
+
+:root {
+
+  --offsets: 64px;
+
+  @media (max-width: 600px) {
+    --offsets: 16px;
+  }
+
+  --section-offsets: 48px;
+
+  @media (max-width: 600px) {
+    --section-offsets: 32px;
+  }
+}
+
+
+
+
+
 /**
  * Variables
 */
