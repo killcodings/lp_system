@@ -9,8 +9,3 @@ img {
   width: 100%;
   height: auto;
 }
-
-@mixin sizeImage($width, $height) {
-  max-width: $width;
-  height: $height;
-}

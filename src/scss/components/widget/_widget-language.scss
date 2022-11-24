@@ -2,6 +2,7 @@
   display: flex;
   cursor: pointer;
   align-items: center;
+  color: var(--primary-nav-menu-color);
 
   .wpml-ls {
     position: relative;
@@ -11,7 +12,7 @@
     &-sub-menu {
       display: none;
       position: absolute;
-      right: -55px;
+      right: 0;
       &-active {
         display: block;
       }

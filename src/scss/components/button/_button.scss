@@ -1,0 +1,49 @@
+@use "../../base/vars";
+@use "../../base/mixins";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px;
+  border: none;
+  color: var(--buttons-color-text);
+  background: var(--buttons-background);
+  font-size: 16px;
+  line-height: normal;
+  font-family: Inter, sans-serif;
+  text-decoration: none;
+  max-width: var(--button-width, 100%);
+  position: relative;
+  transition: 0.25s;
+  cursor: pointer;
+  justify-self: var(--position-btn);
+
+  &:hover,
+  &:focus {
+    color: var(--buttons-color-hover);
+    background: var(--buttons-background-hover);
+  }
+
+  @media (max-width: 600px) {
+    max-width: 100%;
+    width: 100%;
+  }
+  width: var(--button-width, 100%);
+
+  &__image {
+    @include mixins.sizeRatio(20px, 20px);
+    margin-right: 8px;
+  }
+
+  &_icon {
+
+    &:after {
+      content: "\e803";
+      font-family: "fontello";
+      transform: rotate(45deg);
+      margin-left: 15px;
+    }
+
+  }
+}

@@ -1,6 +1,30 @@
 import '../scss/app.scss';
 
-/* Your JS Code goes here */
+import All from "./all";
+// import PrimaryNav from "./primary-nav";
+// import TopButton from "./top-button";
+import Widget from "./widget";
 
-/* Demo JS */
-import './demo.js';
+
+document.addEventListener('DOMContentLoaded', async () => {
+    window.refs = {
+        all: {
+            init: () => new All()
+        },
+        widget: {
+            init: () => new Widget()
+        },
+        // primaryNav: {
+        //     init: () => new PrimaryNav
+        // },
+        // topButton: {
+        //     init: () => new TopButton
+        // }
+    }
+
+    Object.keys(window.refs).forEach((ref) => {
+        if (window.refs[ref].hasOwnProperty('init')) {
+            window.refs[ref].class = window.refs[ref].init();
+        }
+    });
+});

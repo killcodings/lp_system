@@ -1,9 +1,5 @@
 .primary-nav {
 
-  .main-menu-link, .sub-menu-link {
-    text-transform: uppercase;
-  }
-
   &__list {
     width: 100%;
     display: flex;
@@ -19,7 +15,7 @@
       position: absolute;
       font-family: "fontello";
       font-size: 12px;
-      transition: 250ms all;
+      transition: 0.25s;
     }
   }
 
@@ -76,7 +72,7 @@
       color: var(--primary-nav-menu-color);
       text-decoration: none;
       font-weight: 600;
-      transition: 250ms color;
+      transition: 0.25s color;
 
       &:hover, &:focus {
         color: var(--primary-nav-menu-color, #fff);
@@ -91,7 +87,7 @@
     border-radius: 10px;
     opacity: 0;
     pointer-events: none;
-    transition: 250ms all;
+    transition: 0.25s all;
     box-shadow: 0 4px 16px var(--primary-nav-submenu-shadow);
     z-index: 9999;
 
@@ -136,7 +132,7 @@
       font-weight: 600;
       font-size: 1rem;
       color: var(--primary-nav-submenu-color);
-      transition: 250ms all;
+      transition: 0.25s all;
       display: block;
       padding: 0 1rem;
 
@@ -214,7 +210,7 @@
     z-index: 9999;
 
     &_showed {
-      transition: 250ms all;
+      transition: 0.25s all;
       transform: translateX(0);
       box-shadow: 50px 0 60px 0 rgb(0 0 0 / 50%);
     }
