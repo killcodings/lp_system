@@ -4,6 +4,6 @@ export default class All {
     }
 
     init() {
-
+        console.log('all');
     }
 }

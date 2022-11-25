@@ -5,7 +5,6 @@ import All from "./all";
 // import TopButton from "./top-button";
 import Widget from "./widget";
 
-
 document.addEventListener('DOMContentLoaded', async () => {
     window.refs = {
         all: {
