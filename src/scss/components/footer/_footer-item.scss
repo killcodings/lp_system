@@ -1,0 +1,13 @@
+@use "../../components/menu/menu";
+@use "../../components/widget/widget_custom_html";
+
+.footer__item {
+  display: flex;
+  flex-direction:column;
+  gap:16px;
+
+  &-title {
+    color: #705D12;
+    display: block;
+  }
+}

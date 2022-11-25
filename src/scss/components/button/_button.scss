@@ -32,7 +32,7 @@
   width: var(--button-width, 100%);
 
   &__image {
-    @include mixins.sizeRatio(20px, 20px);
+    @include mixins.sizeRatio(20px);
     margin-right: 8px;
   }
 

@@ -1,0 +1,15 @@
+@use "rating-stars_text";
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+
+  &__value {
+    margin-right: 8px;
+  }
+
+  &__star {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

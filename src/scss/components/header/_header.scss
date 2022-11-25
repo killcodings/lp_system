@@ -2,16 +2,12 @@
 @use "src/scss/components/logo/logo.scss";
 @use "src/scss/components/widget/widget-language";
 @use "src/scss/components/burger/burger";
+@use "header_divider";
 
 .header {
-  padding: 18px 0;
+  padding: var(--offsets18) 0;
 
   &__block {
-    //display: flex;
-    //justify-content: space-between;
-    //align-items: center;
-    //margin-bottom: 0;
-
     display: grid;
     grid-template-columns: max-content 1fr min-content min-content;
     grid-template-rows: auto;
@@ -21,13 +17,12 @@
 
     gap: 0 16px;
 
-    //@media (max-width: 1100px) {
-    //  display: grid;
-    //  grid-template-columns: 1fr 1fr;
-    //  grid-template-rows: auto;
-    //  grid-template-areas:
-    //    "logo widget burger";
-    //}
+    @media (max-width: 1200px) {
+      display: grid;
+      grid-template-columns: 1fr min-content min-content min-content;
+      grid-template-areas:
+        "logo buttons widget burger";
+    }
   }
 
   &__logo {

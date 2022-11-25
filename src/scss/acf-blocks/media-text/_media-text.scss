@@ -1,4 +1,6 @@
 @use "media-text_border-radius";
+@use "src/scss/components/welcome-bonus/welcome-bonus";
+@use "src/scss/components/rating-stars/rating-stars";
 
 .media-text {
   display: grid;
@@ -6,4 +8,10 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   align-items: center;
+
+  &__content {
+    >*:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }

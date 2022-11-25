@@ -1,6 +1,6 @@
-@mixin sizeRatio($width, $height) {
-  width: $width;
-  height: $height;
+@mixin sizeRatio($w) {
+  width: $w;
+  height: $w;
 }
 
 @mixin clearfix {

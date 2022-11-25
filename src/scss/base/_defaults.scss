@@ -19,11 +19,11 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-:is(h1, h2, h3, h4, h5, h6) {
+:is(h1, h2, h3, h4, h5, h6), .heading {
   font-weight: 600;
 }
 
-h1 {
+h1, .heading {
   font-size: 36px;
   line-height: 44px;
   letter-spacing: -0.02em;
@@ -52,6 +52,16 @@ h5 {
 h5 {
   font-size: 14px;
   line-height: 24px;
+}
+
+.text-m {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-s {
+  font-size: 12px;
+  line-height: 18px;
 }
 
 @media (max-width: 600px) {
