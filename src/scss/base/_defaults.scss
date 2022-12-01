@@ -29,7 +29,7 @@ h1, .heading {
   letter-spacing: -0.02em;
 }
 
-h2 {
+h2, heading-2 {
   font-size: 30px;
   line-height: 38px;
 }
@@ -96,7 +96,10 @@ body {
   hyphens: auto;
   font-family: Inter, sans-serif;
   line-height: 1;
-  hyphens: none;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 *,
@@ -144,6 +147,7 @@ table {
 .has-text-align-center {
   text-align: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 .has-white-color {

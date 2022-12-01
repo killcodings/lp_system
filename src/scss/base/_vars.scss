@@ -15,7 +15,12 @@
 
   --offsets18: 18px;
 
+  --header-bg: #fff;
 
+
+
+
+  --border-quote: var( --accent-color);
 
   --accent-color:#FFDA44;
 
@@ -24,7 +29,7 @@
   --primary-nav-menu-color: #000;
   --primary-nav-submenu-border: rgb(238,238,34);
   --primary-nav-submenu-shadow: rgba(0, 0, 0, 0.1);
-  --primary-nav-submenu-border-style: dashed;
+  --primary-nav-submenu-border-style: solid;
   --primary-nav-submenu-color: #000;
   --primary-nav-submenu-background: #d7d7d7;
   --primary-nav-submenu-color-hover: #FD5252FF;

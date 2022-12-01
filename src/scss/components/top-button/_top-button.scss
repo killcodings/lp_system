@@ -2,23 +2,48 @@
   position: fixed;
   bottom: 15px;
   right: 15px;
-  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--accent-color);
   display: none;
-  width: 60px;
-  height: 60px;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  text-align: center;
-  opacity: 0.7;
-  appearance: none;
+  width: 48px;
+  height: 48px;
+  //appearance: none;
   cursor: pointer;
-  border-style: solid;
-  border-color: var(--accent-color);
+  //border-color: var(--accent-color);
+  border-style: unset;
+  border: 1px solid #DDDDDD;
   z-index: 2;
+
+  path {
+    stroke: black;
+  }
+
 
   &_active {
     display: block;
+  }
+
+  &-square-bg-white {
+    background-color: #fff;
+    right: 78px;
+  }
+
+  &-circle-bg-black {
+    border-radius: 50%;
+    background-color: #000;
+    right: 143px;
+
+    path {
+      stroke: white;
+    }
+  }
+
+  &-circle-bg-color {
+    border-radius: 50%;
+    background-color: red;
+    right: 207px;
   }
 
   @media (max-width: 600px) {

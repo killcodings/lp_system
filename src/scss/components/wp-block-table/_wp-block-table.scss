@@ -1,0 +1,83 @@
+.wp-block-table {
+  .has-fixed-layout {
+    table-layout: fixed;
+    width: 100%;
+
+
+
+      td {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        padding: 16px;
+
+        &:nth-child(2) {
+          text-align: end;
+        }
+      }
+
+  }
+
+  &.border {
+    tr {
+      &:nth-child(odd) {
+        border-top: 1px solid #DDDDDD;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #DDDDDD;
+      }
+    }
+  }
+
+  &.gap {
+    table {
+      display: flex;
+
+      tbody {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px 0;
+
+        tr {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          //background: #FFF7D8;
+        }
+      }
+    }
+  }
+
+  &.odd {
+    tr {
+      &:nth-child(odd) {
+        border: unset;
+        background: #F4F4F4;
+      }
+
+      &:nth-child(even) {
+        border: unset;
+      }
+    }
+  }
+
+  &.multi-color {
+    tr {
+      &:nth-child(odd) {
+        border: unset;
+        background: #FFF7D8;
+      }
+
+      &:nth-child(even) {
+        border: unset;
+        background: #F4F4F4;
+      }
+    }
+  }
+
+}
+
+

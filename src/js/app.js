@@ -1,7 +1,7 @@
 import '../scss/app.scss';
 
 import All from "./all";
-// import PrimaryNav from "./primary-nav";
+import PrimaryNav from "./primary-nav";
 import TopButton from "./top-button";
 import Widget from "./widget";
 
@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         widget: {
             init: () => new Widget()
         },
-        // primaryNav: {
-        //     init: () => new PrimaryNav
-        // },
+        primaryNav: {
+            init: () => new PrimaryNav
+        },
         topButton: {
             init: () => new TopButton
         }

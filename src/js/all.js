@@ -4,6 +4,17 @@ export default class All {
     }
 
     init() {
-        console.log('all');
+        const header = document.querySelector('.header');
+        const primaryNavShowed = document.querySelector('.header__primary-nav');
+
+        if (header) {
+            const main = document.querySelector('main');
+            let h = header.offsetHeight;
+            let primaryNavShowedHeight = primaryNavShowed.offsetHeight;
+            primaryNavShowed.style.top = h + 'px';
+            primaryNavShowed.style.height = primaryNavShowedHeight - h + 'px';
+
+
+        }
     }
 }

@@ -1,9 +1,17 @@
 .section-tag {
   position: relative;
-  padding: var(--section-offsets) 0;
+  padding: var(--section-offsets) 0 0 0;
   background-color: var(--section-background);
 
   @media(max-width: 600px) {
     padding: var(--section-offsets) 0;
+  }
+
+  &_pb {
+    padding-bottom: var(--section-offsets);
+  }
+
+  &_pt {
+
   }
 }

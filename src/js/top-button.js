@@ -4,22 +4,26 @@ export default class TopButton {
     }
 
     init() {
-        const topButton = document.querySelector('.top-button');
+        const topButton = document.querySelectorAll('.top-button');
 
         window.addEventListener('scroll', function () {
-            if (this.scrollY >= 500) {
-                topButton.classList.add('top-button_active');
-            } else {
-                topButton.classList.remove('top-button_active');
-            }
+            [...topButton].forEach((elem) => {
+                if (this.scrollY >= 500) {
+                    elem.classList.add('top-button_active');
+                } else {
+                    elem.classList.remove('top-button_active');
+                }
+            })
         });
 
         if (topButton) {
-            topButton.addEventListener('click', function () {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                })
+            [...topButton].forEach((elem) => {
+                elem.addEventListener('click', function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    })
+                });
             });
         }
     }

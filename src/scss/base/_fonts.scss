@@ -1,3 +1,5 @@
+@use "mixins";
+
 /**
  * Fonts
 */
@@ -88,3 +90,36 @@ Fontello
 .icon-up:before { content: '\e803'; } /* '' */
 .icon-gift:before { content: '\e804'; } /* '' */
 .icon-location-outline:before { content: '\e805'; } /* '' */
+
+.heading-2 {
+
+  &-icon {
+    --size-ratio: 25px;
+    position: relative;
+    width: max-content;
+    padding-left: calc(var(--size-ratio) + 16px);
+
+    &:before {
+      content: "";
+      @include mixins.sizeRatio(25px);
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      position: absolute;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAjCAYAAADmOUiuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEESURBVHgB7dhdrcJAEIbhF4KA4+BUAg6KA3BAcYIUJCBhcYADigJwADuEkob0hpl+hL8nmZtekOl82Z3QAd3muQo0Uq4NQYdcJ1FNCCrRNbfjQcOOZxU6iR7YW35lvAcc7iOeobPG4ZkNJoIKdPFa/eHQnuAUnZTriEO7QWW8K4IKtPH+49RMsEQn5drj1DRYoeO6XtrsdL1kvMYmqDy9NYF4zej6Iws0aj7dgDi7AQo0tvRgh+6Ahc/HWNjcZX8PiSnRSbmO0QZ/+zsyQXW8lws+0mCFzvvsb+8ElfvbLufb/vY2+NJ/rszv203DE3GFTqIH9pZfGW/nt5sRj1uiUXc9PANhQHZkxD7L5AAAAABJRU5ErkJggg==") no-repeat 50%;
+
+    }
+  }
+}
+
+.quote-left {
+  text-align: left;
+  border-left: 2px solid var(--border-quote);
+  padding-left: 16px;
+}
+
+.quote-top {
+  text-align: left;
+  border-top: 2px solid var(--border-quote);
+  padding-top: 16px;
+}

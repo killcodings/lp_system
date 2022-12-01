@@ -1,15 +1,50 @@
-@use "rating-stars_text";
 
 .rating-stars {
   display: flex;
   align-items: center;
 
   &__value {
+    color: var(--rating-color);
     margin-right: 8px;
   }
 
   &__star {
+    --percent: calc(var(--rating));
+    --end-gradient: calc(100% - var(--percent));
     font-size: 20px;
     line-height: 20px;
+    background: linear-gradient(90deg,#fec84b var(--percent),#000 var(--end-gradient));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+
+
+  &_text {
+
+    .rating-stars__value {
+      margin-right: 4px;
+    }
+
+    .rating-stars__star {
+      padding-right: 4px;
+      border-right: 1px solid #DDDDDD;
+    }
+
+    .rating-stars__text {
+      margin-left: 4px;
+      line-height: normal;
+    }
+  }
+
+  &-background {
+    padding: 16px;
+    background: #000;
+    width: max-content;
+  }
+
+  &__heading {
+    margin-right: 8px;
+    color: var(--rating-color);
+  }
+
 }
