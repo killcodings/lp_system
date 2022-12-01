@@ -10,6 +10,8 @@ export default class PrimaryNav {
             const primaryNavBtnTop = document.querySelector('.primary-nav_buttons_top');
             const primaryNavBtnBottom = document.querySelector('.primary-nav_buttons_bottom');
             const isHeaderBtnTop = document.querySelector('.header .buttons');
+            const primaryNavAddWidget = document.querySelector('.primary-nav_add_widget');
+            const isHeaderWidget = document.querySelector('.header__widget ');
             const primaryNavList = primaryNav.querySelector('.primary-nav__list');
             const burger = document.querySelector('.burger');
 
@@ -25,13 +27,18 @@ export default class PrimaryNav {
             if (isHeaderBtnTop && primaryNavBtnTop) {
                 const cloneHeaderBtnTop = isHeaderBtnTop.cloneNode(true);
                 primaryNav.prepend(cloneHeaderBtnTop);
+                isHeaderBtnTop.remove();
             }
 
             if (isHeaderBtnTop && primaryNavBtnBottom) {
                 const cloneHeaderBtnBottom = isHeaderBtnTop.cloneNode(true);
                 cloneHeaderBtnBottom.classList.add('buttons_bottom');
                 primaryNav.append(cloneHeaderBtnBottom);
-                console.log(primaryNav.length);
+            }
+
+            if (isHeaderWidget && primaryNavAddWidget) {
+                const clonePrimaryNavAddWidget = isHeaderWidget.cloneNode(true);
+                primaryNav.append(clonePrimaryNavAddWidget);
             }
 
             burger.addEventListener('click', function () {

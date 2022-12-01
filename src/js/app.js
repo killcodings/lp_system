@@ -7,9 +7,6 @@ import Widget from "./widget";
 
 document.addEventListener('DOMContentLoaded', async () => {
     window.refs = {
-        all: {
-            init: () => new All()
-        },
         widget: {
             init: () => new Widget()
         },
@@ -18,6 +15,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         },
         topButton: {
             init: () => new TopButton
+        },
+        all: {
+            init: () => new All()
         }
     }
 

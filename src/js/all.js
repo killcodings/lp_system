@@ -12,6 +12,7 @@ export default class All {
             let h = header.offsetHeight;
             let primaryNavShowedHeight = primaryNavShowed.offsetHeight;
             primaryNavShowed.style.top = h + 'px';
+            console.log(h + ' ' + header.offsetHeight)
             primaryNavShowed.style.height = primaryNavShowedHeight - h + 'px';
 
 
