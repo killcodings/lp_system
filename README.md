@@ -1,3 +1,3 @@
 # apps-lp
 
-# https://killcodings.github.io/apps-lp/dist/
+# https://killcodings.github.io/lp_system/dist/
